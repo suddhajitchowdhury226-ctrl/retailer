@@ -1,0 +1,197 @@
+/* EssentialOilsInfo.scss */
+
+/* PART 1: Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  margin-top: 4rem; /* mt-16 */
+  min-height: 100vh; /* min-h-screen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+
+.logo-circle {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 7rem; /* w-36 */
+  height: 7rem; /* h-36 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+  padding: 0.5rem; /* p-2 */
+}
+
+@media (min-width: 768px) {
+  .logo-circle {
+    width: 9rem; /* md:w-44 */
+    height: 9rem; /* md:h-44 */
+  }
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main-content-container {
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-text {
+  color: white;
+  text-align: center;
+  font-size: 1rem; /* text-base */
+  font-weight: 500; /* font-medium */
+  margin-bottom: 2rem; /* mb-8 */
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wider */
+}
+
+@media (min-width: 768px) {
+  .top-text {
+    font-size: 1.25rem; /* md:text-xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-text {
+    font-size: 1.5rem; /* lg:text-2xl */
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    gap: 1rem; /* md:gap-4 */
+  }
+}
+
+.product-bottle {
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.bottle-image {
+  width: 16rem; /* w-64 */
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.5)); /* drop-shadow-2xl */
+}
+
+@media (min-width: 768px) {
+  .bottle-image {
+    width: 20rem; /* md:w-80 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .bottle-image {
+    width: 24rem; /* lg:w-96 */
+  }
+}
+
+.essential-oils-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: -2rem; /* -ml-8 */
+}
+
+@media (min-width: 768px) {
+  .essential-oils-text {
+    margin-left: -3rem; /* md:-ml-12 */
+  }
+}
+
+.essential-text {
+  font-size: 3.75rem; /* text-6xl */
+  font-weight: 800; /* font-extrabold */
+  color: white;
+  line-height: 1; /* leading-none */
+  letter-spacing: -0.025em; /* tracking-tight */
+}
+
+@media (min-width: 768px) {
+  .essential-text {
+    font-size: 4.5rem; /* md:text-7xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .essential-text {
+    font-size: 6rem; /* lg:text-8xl */
+  }
+}
+
+@media (min-width: 1280px) {
+  .essential-text {
+    font-size: 8.25rem; /* xl:text-9xl */
+  }
+}
+
+.oils-container {
+  margin-top: 0.5rem; /* mt-2 */
+}
+
+.oils-text {
+  font-size: 3.75rem; /* text-6xl */
+  font-weight: 800; /* font-extrabold */
+  color: white;
+  background-color: #FF9800; /* bg-[#FF9800] */
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  line-height: 1; /* leading-none */
+  letter-spacing: -0.025em; /* tracking-tight */
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .oils-text {
+    font-size: 4.5rem; /* md:text-7xl */
+    padding: 0.5rem 2rem; /* md:px-8 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .oils-text {
+    font-size: 6rem; /* lg:text-8xl */
+  }
+}
+
+@media (min-width: 1280px) {
+  .oils-text {
+    font-size: 8.25rem; /* xl:text-9xl */
+  }
+}

@@ -1,0 +1,275 @@
+// .Homepage__heroMainWrapper {
+//   height: 85vh;
+//   width: 100%;
+//   padding: 15px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+
+//   .Homepage__mainContainerWrapper {
+//     width: 97%;
+//     height: 100%;
+//     border-radius: 20px;
+//     overflow: hidden;
+
+//     scroll-behavior: smooth;
+//     .HP__heroSliderWrapper {
+//       width: 100%;
+//       height: 100%;
+
+//       display: flex;
+//       justify-content: start;
+//       align-items: center;
+//       .mainSliderWrapper {
+//         width: 100%;
+//         height: 100%;
+//         flex-shrink: 0;
+
+//         position: relative;
+//         .sliderImgWrapper {
+//           width: 100%;
+//           height: 100%;
+//           position: absolute;
+//           top: 0;
+//           left: 0;
+//           filter: brightness(0.5) grayscale(0.2);
+
+//           img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//             object-position: top;
+//           }
+//         }
+
+//         .sliderContentWrapper {
+//           position: relative;
+//           width: 100%;
+//           height: 100%;
+
+//           .contentWrapper {
+//             width: 40%;
+//             padding: 40px;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 1.3dvw;
+
+//             h2 {
+//               font-size: 4dvw;
+//               line-height: normal;
+//               font-family: var(--mainFont);
+//               color: var(--color-white);
+//               font-weight: 800;
+
+//               .headingSpan1 {
+//                 color: var(--color-primary);
+//               }
+//               .headingSpan2 {
+//                 color: var(--color-seconday);
+//               }
+//             }
+//             p {
+//               font-size: 1.1dvw;
+//               line-height: 1.5dvw;
+//               font-weight: 400;
+//               font-family: var(--paraFont);
+//               color: var(--color-white);
+//             }
+//           }
+
+//           .heroViewBTN {
+//             position: absolute;
+//             bottom: 10%;
+//             right: 5%;
+//             height: 6dvw;
+//             width: 6dvw;
+//             padding: 12px;
+//             border: none;
+//             outline: none;
+//             border-radius: 50px;
+//             cursor: pointer;
+//             background: var(--color-primary);
+//             font-family: var(--mainFont);
+//             color: var(--color-white);
+//             font-size: 1.1dvw;
+//             scale: 0.8;
+//             font-weight: 600;
+//             transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+//             &:hover {
+//               border: 1.5px solid var(--color-seconday);
+//               background: transparent;
+//               color: var(--color-seconday);
+//               scale: 1.1;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .slider__indicatorWrapper {
+//     position: absolute;
+//     bottom: -2%;
+//     left: 0;
+//     width: 100%;
+//     padding: 5px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: .5dvw;
+//     div {
+//       width: .8dvw;
+//       height: .8dvw;
+//       background: var(--color-seconday);
+//       border-radius: 50px;
+//       cursor: pointer;
+//     }
+//   }
+// }
+
+
+@media screen and (max-width: 1024px) {
+  .sliderContentWrapper {
+     .contentWrapper{
+      width: 75%;
+     }
+         .contentWrapper h2 {
+          margin-top: 4rem;
+          font-size: 2rem !important;
+         }
+            .contentWrapper p {
+          width: 80%;
+          font-size: 1rem !important;
+          line-height: 1.5rem !important;
+         }
+
+  }
+  
+  .createStore__centerWrapper {
+    margin-top: auto;
+    position: absolute;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) scale(1);
+    transform-origin: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: none;
+    width: auto;
+    bottom: 8%;
+  }
+  
+  .createStore__subTitle {
+    display: none;
+  }
+  
+  .createStore__mainTitle {
+    font-size: 20px !important;
+    white-space: nowrap;
+  }
+  
+  .createStore__button {
+    transform: scale(0.6);
+  }
+  
+  .wholesaler__badge {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sliderContentWrapper {
+    .contentWrapper {
+      padding-bottom: 120px;
+    }
+    .contentWrapper h2 {
+      font-size: 1.5rem !important;
+      margin-bottom: 0.5rem;
+    }
+    .contentWrapper p {
+      font-size: 0.85rem !important;
+      line-height: 1.2rem !important;
+      margin-bottom: 0;
+    }
+  }
+  
+  .createStore__centerWrapper {
+    margin-top: auto;
+    position: absolute;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) scale(0.55);
+    transform-origin: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 90%;
+    width: auto;
+    bottom: 10%;
+  }
+  
+  .createStore__mainTitle {
+    white-space: normal;
+    font-size: 11px !important;
+  }
+  
+  .createStore__button {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .createStore__centerWrapper {
+    transform: translateX(-50%) scale(0.65);
+    bottom: 12%;
+  }
+  
+  .createStore__mainTitle {
+    font-size: 1rem !important;
+  }
+  
+  .createStore__subTitle {
+    font-size: 0.85rem !important;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .createStore__centerWrapper {
+    left: 50% !important;
+    transform: translateX(-50%) scale(0.85) !important;
+    bottom: 7% !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .sliderContentWrapper {
+    .contentWrapper h2 {
+      font-size: 1.2rem !important;
+    }
+    .contentWrapper p {
+      font-size: 0.8rem !important;
+      line-height: 1.2rem !important;
+    }
+  }
+  
+  .createStore__centerWrapper {
+    transform: translateX(-50%) scale(0.55);
+    bottom: 14%;
+  }
+  
+  .createStore__mainTitle {
+    font-size: 0.85rem !important;
+  }
+  
+  .createStore__subTitle {
+    font-size: 0.75rem !important;
+    margin-top: 80px;
+  }
+}
+
+
+.createStore__centerWrapper {
+  margin-top: 4px;
+}

@@ -1,0 +1,176 @@
+.Footer__mainWrapper {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  .Footer__ContentWrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5dvw;
+    .Footer__contactInfoMainWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px 5px;
+      border-bottom: 1px solid var(--color-white);
+
+      .contactInfoWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1dvw;
+        h3 {
+          font-family: var(--mainFont);
+          font-size: 2dvw;
+          color: var(--color-white);
+          line-height: 1.5dvw;
+        }
+        p {
+          font-family: var(--paraFont);
+          font-size: 0.9dvw;
+          font-weight: 500;
+          color: var(--color-white);
+        }
+      }
+
+      .contactWrapper {
+        display: flex;
+        justify-content: center;
+        gap: 1.5dvw;
+        align-items: center;
+
+        .contactCard__Wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1dvw;
+          .contactIconWrapper {
+            color: var(--color-white);
+          }
+          .contactDetailWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 5px;
+
+            p {
+              color: var(--color-white);
+              font-family: var(--paraFont);
+              font-size: 1dvw;
+            }
+            a {
+              color: var(--color-white);
+              text-decoration: none;
+              font-family: var(--paraFont);
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .Footer__linksMianWrapper {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid var(--color-white);
+
+      padding: 20px 0px;
+
+      .Footer__leftWrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2dvw;
+        padding: 5px 10px;
+
+        .FooterLogoWrapper {
+          img {
+            height: 4dvw;
+            width: auto;
+          }
+        }
+        P {
+          color: var(--color-white);
+          font-family: var(--paraFont);
+          font-size: 1dvw;
+          font-weight: 500;
+          line-height: 1.5dvw;
+        }
+
+        .Footer__socialMediaIconWrapper {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          gap: 1.1dvw;
+
+          button {
+            height: 3dvw;
+            width: 3dvw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+              background-color: var(--color-seconday);
+              color: var(--color-white);
+              transform: scale(1.1) translateY(-10px);
+            }
+          }
+        }
+      }
+
+      .Footer__rightWrapper {
+        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5dvw;
+        .linksMainWrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 1dvw;
+          h3 {
+            font-family: var(--mainFont);
+            font-size: 2dvw;
+            color: var(--color-white);
+          }
+          .linkswrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1dvw;
+            margin-top: 10px;
+
+            li {
+              list-style: none;
+              text-decoration: none;
+              font-family: var(--paraFont);
+              font-size: 1dvw;
+              color: var(--color-white);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .Footer__outtroWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0px;
+      p {
+        font-family: var(--paraFont);
+        color: var(--color-white);
+        font-weight: 500;
+        font-size: 1.1dvw;
+        text-align: center;
+      }
+    }
+  }
+}

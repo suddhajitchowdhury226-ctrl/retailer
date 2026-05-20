@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainFont: "Quicksand";
+  --paraFont: "Ubuntu";
+  --color-primary: #5a7d2e;
+  --color-seconday: #d4820a;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+.mainFont {
+  font-family: var(--mainFont);
+}
+.paraFont {
+  font-family: var(--paraFont);
+}
+svg {
+  display: inline-flex !important;
+}
+
+/* Visually hidden — accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus visible outline for keyboard navigation */
+:focus-visible {
+  outline: 3px solid #d4820a;
+  outline-offset: 2px;
+}
+.mainSectionWrapper::-webkit-scrollbar {
+  display: none;
+}
